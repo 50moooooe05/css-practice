@@ -1,12 +1,13 @@
 body{
     margin:0;
+    -webkit-font-smoothing: antialiased; /*フォントを綺麗にする(?)*/
 }
 
 .top .box{
     height:149px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*アイテムを真ん中寄せに*/
+    align-items: center; /*アイテムを中央付近にまとめる*/
 }
 
 .hello{
@@ -18,7 +19,8 @@ body{
 .bottom .box{
     height:236px;
     display:flex;
-    overflow-x: auto;
+    overflow-x: auto; /*はみ出た要素の左右の表示方法を指定*/
+    overflow-y:hidden; /*はみ出た要素の上下の表示方法を指定*/
 }
 
 .column{
@@ -46,20 +48,24 @@ body{
 }
 
 .foot{
-    background-color:#FFE8AA;
-    border: solid 2px #707070;
-    border-radius: 4px;
-    width:120px;
-    height:45px;
+    width:100vw;
+    left:0;
     bottom:37px;
     position:fixed;
     display: flex;
     justify-content: center;
+    
 }
 
 .start{
+    box-sizing: border-box; /*paddingとborderを幅と高さに含める*/
+    background-color:#FFE8AA;
+    border: solid 2px #707070;
+    padding: 8px 0 8px;
+    border-radius: 4px;
     font-size: 20px;
     font-weight:bold;
     color:#707070;
-    padding:10px 37px 11px;
+    width:120px;
+    text-align: center;
 }
