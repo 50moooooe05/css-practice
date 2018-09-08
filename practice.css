@@ -17,7 +17,6 @@ body{
 }
 
 .bottom .box{
-    height:236px;
     display:flex;
     overflow-x: auto; /*はみ出た要素の左右の表示方法を指定*/
     overflow-y:hidden; /*はみ出た要素の上下の表示方法を指定*/
